@@ -1,0 +1,111 @@
+.photos__list {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+}
+
+
+.photos__item {
+    width: calc(33.333% - 20px);
+    border-radius: 6px;
+    background: rgb(255, 249, 240);
+    overflow: hidden;
+    height: 486px;
+}
+.photos__item img{
+    min-width: 100%;
+}
+.photos__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    padding-top: 0px;
+}
+
+.photos__content h3 {
+    line-height: 1.2;
+    margin-bottom: 5px;
+}
+
+.photos__content__main {
+    color: rgb(30, 30, 30);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.photos__content__day {
+    color: rgb(30, 30, 30);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    display: block;
+}
+
+.photos__content__price {
+    color: rgb(30, 30, 30);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+/* Media Queries for Responsiveness */
+
+@media screen and (max-width: 1024px) {
+    .photos__item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .photos__list {
+        flex-direction: column;
+    }
+
+    .photos__item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .photos__content__main {
+        font-size: 20px;
+    }
+
+    .photos__content__day,
+    .photos__content__price {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .photos__content {
+    }
+
+    .photos__content__price {
+        margin-top: 10px;
+    }
+
+    .photos__content__main {
+        font-size: 18px;
+    }
+
+    .photos__content__day,
+    .photos__content__price {
+        font-size: 12px;
+    }
+}
+

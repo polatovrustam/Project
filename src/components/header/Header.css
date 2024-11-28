@@ -1,0 +1,255 @@
+.header {
+    position: relative;
+    background-image: url('./../../../public/Rectangle\ 13.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(91.15deg, rgba(0, 0, 0, 0.8) 0.228%, rgba(0, 0, 0, 0) 99.745%);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo {
+    max-width: 150px;
+}
+
+.navbar__menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: "Work Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar__menu__item a {
+    color: rgb(255, 255, 255);
+    font-family: Work Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar__menu__item a:hover {
+    color: rgb(255, 128, 60);
+}
+
+.navbar__right {
+    display: flex;
+    gap: 20px;
+    font-family: "Work Sans", sans-serif;
+}
+
+.navbar__right__signup,
+.navbar__right__signin {
+    border: none;
+    border-radius: 18px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.navbar__right__signup {
+    background: linear-gradient(90deg, rgb(205, 26, 64) -11%, rgb(255, 128, 60) 109.5%);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 10px 0px rgba(205, 26, 64, 0.22);
+}
+
+.navbar__right__signin {
+    background: transparent;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+.navbar__right__signup:hover,
+.navbar__right__signin:hover {
+    opacity: 0.8;
+}
+
+.main {
+    width: 50%;
+    padding: 100px 0;
+}
+
+.main__subtitle {
+    color: rgb(255, 255, 255);
+    font-family: 'Water Brush', cursive;
+    font-size: 46px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.main__title {
+    color: rgb(255, 255, 255);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 80px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 0 0 20px;
+}
+
+.main__text {
+    color: rgb(255, 255, 255);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+}
+
+.mobile-menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    .main {
+        width: 60%;
+    }
+
+    .main__title {
+        font-size: 60px;
+    }
+
+    .main__subtitle {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar__menu,
+    .navbar__right {
+        display: none;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .main {
+        width: 80%;
+        padding: 80px 0;
+    }
+
+    .main__title {
+        font-size: 48px;
+    }
+
+    .main__subtitle {
+        font-size: 32px;
+    }
+
+    .main__text {
+        font-size: 14px;
+    }
+
+    .navbar__menu.open,
+    .navbar__right.open {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar__menu.open {
+        gap: 30px;
+    }
+
+    .navbar__menu.open .navbar__menu__item {
+        font-size: 18px;
+    }
+
+    .navbar__right.open {
+        margin-top: 30px;
+    }
+
+    .navbar__right.open .navbar__right__signin,
+    .navbar__right.open .navbar__right__signup {
+        margin: 10px 0;
+    }
+
+    .mobile-menu-toggle.open span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .mobile-menu-toggle.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-menu-toggle.open span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+
+    .main {
+        width: 100%;
+        padding: 60px 0;
+    }
+
+    .main__title {
+        font-size: 36px;
+    }
+
+    .main__subtitle {
+        font-size: 28px;
+    }
+
+    .navbar__logo {
+        max-width: 120px;
+    }
+}
+

@@ -1,0 +1,182 @@
+.destination {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.destination__subtitle {
+    color: #CD1A40;
+    font-family: 'Water Brush', cursive;
+    font-size: 46px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+
+.destination__title {
+  color: rgb(30, 30, 30);
+font-family: Work Sans;
+font-size: 64px;
+font-weight: 200;
+line-height: 5px;
+letter-spacing: 0%;
+text-align: center;
+text-transform: uppercase;
+}
+
+.destination__list {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 20px;
+    height: 600px;
+}
+
+.destination__left {
+    background: url('./../../../public/Group\ 1.png') center/cover no-repeat;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.destination__right {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.destination__right__top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.destination__right__first,
+.destination__right__second,
+.destination__right__bottom {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+
+.destination__right__second {
+    background: url('./../../../public/Group\ 22.png') center/cover no-repeat;
+}
+
+.destination__right__first{
+    background: url('./../../../public/Group\ 22.png') center/cover no-repeat;
+}
+
+.destination__right__bottom {
+    background: url('./../../../public/Group\ 4.png') center/cover no-repeat;
+}
+
+.destination__card {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.destination__card h2 {
+  color: rgb(255, 255, 255);
+font-family: Water Brush;
+font-size: 46px;
+font-weight: 400;
+line-height: 67px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.destination__card button {
+    border: none;
+    border-radius: 18px;
+    color: white;
+    padding: 8px 16px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    border-radius: 18px;
+box-shadow: 0px 5px 10px 0px rgba(205, 26, 64, 0.22);
+background: linear-gradient(90.00deg, rgb(205, 26, 64) -11%,rgb(255, 128, 60) 109.5%);
+}
+
+.destination__card button:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+    
+    .destination__title {
+        font-size: 60px;
+    }
+    
+    .destination__subtitle {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .destination__list {
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 20px;
+    }
+    
+    .destination__left {
+        height: 400px;
+    }
+    
+    .destination__right {
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+    
+    .destination__right__top {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .destination__right__first,
+    .destination__right__second,
+    .destination__right__bottom {
+        height: 200px;
+    }
+    
+    .destination__title {
+        font-size: 48px;
+    }
+    
+    .destination__subtitle {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+    
+    .destination__title {
+        font-size: 36px;
+    }
+    
+    .destination__subtitle {
+        font-size: 28px;
+    }
+}
+
