@@ -54,6 +54,14 @@ export default function Header() {
                         <li className='navbar__menu__item'><a href="#blogs">Blogs</a></li>
                     </ul>
                     <div className={`navbar__right ${isMenuOpen ? 'open' : ''}`}>
+                        <div className='toggle__menu'>
+                            <li className='navbar__menu__item'><a href="#home">Home</a></li>
+                            <li className='navbar__menu__item'><a href="#about">About Us</a></li>
+                            <li className='navbar__menu__item'><a href="#destinations">Destinations</a></li>
+                            <li className='navbar__menu__item'><a href="#tours">Tours</a></li>
+                            <li className='navbar__menu__item'><a href="#shop">Shop</a></li>
+                            <li className='navbar__menu__item'><a href="#blogs">Blogs</a></li>
+                        </div>
                         <button className='navbar__right__signin'>Sign In</button>
                         <button className='navbar__right__signup'>Sign Up</button>
                     </div>

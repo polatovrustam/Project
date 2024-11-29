@@ -2,6 +2,7 @@
     position: relative;
     background-image: url('./../../../public/Rectangle\ 13.png');
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     min-height: 100vh;
 }
@@ -113,7 +114,10 @@
     font-weight: 700;
     margin: 0 0 20px;
 }
+.toggle__menu{
+        display: none;
 
+    }
 .main__text {
     color: rgb(255, 255, 255);
     font-family: 'Work Sans', sans-serif;
@@ -164,6 +168,16 @@
         display: none;
     }
 
+    .toggle__menu{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    list-style: none;
+    }
+
+    .toggle__menu li {
+        text-align: center;
+    }
     .mobile-menu-toggle {
         display: block;
     }

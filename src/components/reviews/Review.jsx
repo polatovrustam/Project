@@ -20,7 +20,7 @@ export default function Review() {
               <div className='comment__user__list'>
                 <img src={User1} alt=''/>
                   <img src={User1} alt='' />
-                  <div style={{display:"flex", gap:"30px"}}>
+                  <div style={{display:"flex", gap:"30px" , alignItems:"center"}}>
                       <img src={User1} alt='' />
                       <img src={User1} alt='' />
                       <p className='comment__username'>Scarlett Thomas <br /> <span>Singapore</span></p>
