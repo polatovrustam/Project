@@ -6,7 +6,7 @@ import Strelka from '../../assets/Vector.png';
 export default function Our() {
   return (
     <section className='our'>
-        <img className='our__img' src={Img}/>
+        <img className='our__img' src={Img} alt='images'/>
         <div className='our__content'>
               <h2 className='our__title'>Get Our Monthly Newsletter</h2>
               <p className='our__text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
