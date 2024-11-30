@@ -93,6 +93,7 @@
 
 @media screen and (max-width: 480px) {
     .photos__content {
+        margin-top:0px
     }
 
     .photos__content__price {
